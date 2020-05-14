@@ -1,14 +1,21 @@
 ﻿<h3>All Bugs</h3>
 <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
     @foreach (Bug bug in Bugs)
     {
-        <tr>
-            <td>
-                bug.Id
-            </td>
-            <td>
 
-            </td>
+        <tr>
+            <td>@bug.Id</td>
+            <td>@bug.Title</td>
+            <td>@bug.Description</td>
+            <td>@bug.Priority</td>
         </tr>
     }
 </table>
